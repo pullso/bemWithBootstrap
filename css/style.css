@@ -74,28 +74,27 @@
 }
 
 .button {
+  cursor: pointer;
   padding: 10px 25px;
   margin: 0 10px;
   color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-.button_empty {
-  border: 3px solid #f8f8f8;
-  background: transparent;
-  text-transform: uppercase;
-}
-
-.button_full {
   background-color: #00897b;
   border: 3px solid #00897b;
   text-transform: uppercase;
 }
 
-.button_empty:hover, .button_full:hover {
-  border: 3px dotted white;
-  background-color: #02665c;
+.button:hover {
+  border: 3px solid #f8f8f8;
+  background: transparent;
+}
+
+.portfolio .button:hover,
+.focused {
+  color: black;
+  border: 3px solid #00897b;
+  background: transparent;
 }
 
 .about {
@@ -187,6 +186,120 @@
   color: #fff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 135px;
+  text-align: center;
+}
+
+.portfolio .filter {
+  padding: 120px 0;
+}
+
+.portfolio img {
+  margin-bottom: 30px;
+}
+
+.portfolio div[filter]:hover img {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  -webkit-transition: 0, 3s;
+  transition: 0, 3s;
+}
+
+.portfolio .text {
+  display: none;
+}
+
+.portfolio div[filter]:hover .text {
+  display: block;
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  z-index: 3;
+  text-align: center;
+}
+
+.pricing {
+  padding-top: 165px;
+  padding-bottom: 125px;
+  color: #212121;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.pricing .price {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #fff;
+}
+
+.pricing .price__head {
+  padding-top: 40px;
+  padding-bottom: 65px;
+  color: white;
+  background: url(../img/pricing.png) center center/cover no-repeat;
+  max-height: 211px;
+  font-size: 50px;
+}
+
+.pricing .price__head p {
+  font-size: 25px;
+}
+
+.pricing .price__head sup {
+  font-size: 25px;
+  vertical-align: middle;
+}
+
+.pricing .price__head sub {
+  font-size: 17px;
+  vertical-align: middle;
+}
+
+.pricing .price__body {
+  font-size: 17px;
+}
+
+.pricing .price__body li {
+  max-width: 175px;
+  border-bottom: 1px solid #bfbfbf;
+  padding-top: 28px;
+  padding-bottom: 12px;
+  margin: 0 auto;
+}
+
+.pricing .price__footer {
+  padding: 60px 0;
+}
+
+.pricing .price__footer button {
+  cursor: pointer;
+  background: transparent;
+  color: #212121;
+  border: 2px solid #212121;
+  font-family: 'Open Sans - Semibold';
+  text-transform: uppercase;
+  font-size: 20px;
+  width: 180px;
+  height: 60px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.pricing .price__footer button:hover {
+  color: white;
+  border: none;
+  background-color: #00897b;
+}
+
+.pricing .price:hover {
+  -webkit-box-shadow: 0 3px 25px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 3px 25px rgba(0, 0, 0, 0.35);
 }
 
 ul,
