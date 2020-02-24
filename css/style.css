@@ -25,7 +25,7 @@
 }
 
 .header-logo {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans Semibold';
   font-size: 25px;
   font-weight: 700;
   line-height: 22px;
@@ -99,7 +99,7 @@
 }
 
 .about {
-  color: black;
+  color: #212121;
   background-color: #fff;
   text-align: center;
   padding-top: 120px;
@@ -112,16 +112,24 @@
   font-weight: 700;
   line-height: 22px;
   letter-spacing: 1.5px;
+  margin-bottom: 36px;
 }
 
 .about__text {
-  margin-top: 36px;
+  margin-bottom: 110px;
   color: #212121;
   font-family: 'Open Sans';
   font-size: 15px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0.75px;
+}
+
+.about_h3 {
+  font-family: 'Open Sans Semibold';
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 ul,
@@ -132,6 +140,6 @@ li {
 }
 
 body {
-  font-family: 'Open Sans - Semibold';
+  font-family: 'Open Sans';
 }
 /*# sourceMappingURL=style.css.map */
