@@ -1,5 +1,8 @@
 @import './adds/font';
 @import './blocks/header';
+@import './blocks/main';
+@import './blocks/buttons';
+@import './blocks/about';
 
 ul,
 li {
@@ -9,5 +12,5 @@ li {
 }
 
 body {
-  background-color: grey;
+  font-family: 'Open Sans - Semibold';
 }

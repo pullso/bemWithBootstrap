@@ -32,7 +32,6 @@
 }
 
 .header-menu__item {
-  font-family: 'Open Sans - Semibold';
   font-size: 20px;
   font-weight: 400;
   line-height: 22px;
@@ -49,6 +48,82 @@
   color: #cccccc;
 }
 
+.main {
+  background: url(../img/header.jpg.png) center center/cover no-repeat;
+  background-position: 0 100%;
+  padding: 180px 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.main__title {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 3px;
+  margin-bottom: 26px;
+}
+
+.main__text {
+  font-family: 'Open Sans';
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 1.1px;
+  margin-bottom: 108px;
+}
+
+.button {
+  padding: 10px 25px;
+  margin: 0 10px;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button_empty {
+  border: 3px solid #f8f8f8;
+  background: transparent;
+  text-transform: uppercase;
+}
+
+.button_full {
+  background-color: #00897b;
+  border: 3px solid #00897b;
+  text-transform: uppercase;
+}
+
+.button_empty:hover, .button_full:hover {
+  border: 3px dotted white;
+  background-color: #02665c;
+}
+
+.about {
+  color: black;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 125px;
+}
+
+.about__title {
+  font-family: 'Open Sans';
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 1.5px;
+}
+
+.about__text {
+  margin-top: 36px;
+  color: #212121;
+  font-family: 'Open Sans';
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.75px;
+}
+
 ul,
 li {
   display: block;
@@ -57,6 +132,6 @@ li {
 }
 
 body {
-  background-color: grey;
+  font-family: 'Open Sans - Semibold';
 }
 /*# sourceMappingURL=style.css.map */
