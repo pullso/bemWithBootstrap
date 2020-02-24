@@ -281,7 +281,7 @@
   cursor: pointer;
   background: transparent;
   color: #212121;
-  border: 2px solid #212121;
+  border: 1px solid #212121;
   font-family: 'Open Sans - Semibold';
   text-transform: uppercase;
   font-size: 20px;
@@ -300,6 +300,83 @@
 .pricing .price:hover {
   -webkit-box-shadow: 0 3px 25px rgba(0, 0, 0, 0.35);
           box-shadow: 0 3px 25px rgba(0, 0, 0, 0.35);
+}
+
+.team {
+  background-color: #fff;
+  color: #212121;
+  text-align: center;
+  padding: 125px 0 115px;
+}
+
+.team img {
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.team h4 {
+  font-size: 20px;
+  font-family: 'Open Sans Semibold';
+  margin-top: 34px;
+}
+
+.team p {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.team .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team .icons a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.team .icons i:nth-child(1) {
+  color: #f0f1f1;
+}
+
+.team .icons i:nth-child(2) {
+  color: #00897b;
+}
+
+.team .icons a:hover i:nth-child(1) {
+  color: #3949ab;
+}
+
+.team .icons a:hover i:nth-child(2) {
+  color: #fff;
+}
+
+.team .dots-style {
+  margin-top: 115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team .dots-style button {
+  background: #00897b;
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+  height: 15px;
+  width: 15px;
+  margin: 5px;
+}
+
+.team .dots-style li[class='slick-active'] button {
+  background-color: #3949ab;
 }
 
 ul,
