@@ -31,6 +31,14 @@
   line-height: 22px;
 }
 
+.header-menu {
+  display: block;
+}
+
+.header-menu li {
+  display: block;
+}
+
 .header-menu__item {
   font-size: 20px;
   font-weight: 400;
@@ -48,6 +56,10 @@
   color: #cccccc;
 }
 
+.header .menu-icon {
+  display: none;
+}
+
 .main {
   background: url(../img/header.jpg.png) center center/cover no-repeat;
   background-position: 0 100%;
@@ -59,7 +71,6 @@
 .main__title {
   font-size: 60px;
   font-weight: 400;
-  line-height: 22px;
   letter-spacing: 3px;
   margin-bottom: 26px;
 }
@@ -238,6 +249,7 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
   background-color: #fff;
+  margin-bottom: 20px;
 }
 
 .pricing .price__head {
@@ -475,7 +487,6 @@
 .footer {
   padding-top: 165px;
   padding-bottom: 125px;
-  max-height: 1300px;
   color: #fff;
   background: url(../img/footer.png) center center/cover no-repeat;
   text-align: center;
@@ -557,7 +568,6 @@
 }
 
 .footer__rules {
-  height: 63px;
   padding: 20px 0;
   background-color: #fff;
   color: #212121;
@@ -568,7 +578,44 @@
   letter-spacing: 1px;
   margin: 0 auto;
   text-align: center;
-  margin-top: 110px;
+}
+
+@media screen and (max-width: 1024px) {
+  .header nav {
+    display: none;
+  }
+  .header .logo-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .menu-icon {
+    display: block;
+    background: #00897b;
+    border: none;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .portfolio img {
+    max-width: 100%;
+  }
+  .blog__item {
+    margin-top: 10px;
+  }
+  .footer input,
+  .footer textarea {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 ul,
@@ -580,5 +627,23 @@ li {
 
 body {
   font-family: 'Open Sans';
+}
+
+#toTop {
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  border-radius: 3px;
+  background: #00897b;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  color: #000;
 }
 /*# sourceMappingURL=style.css.map */

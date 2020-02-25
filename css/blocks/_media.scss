@@ -1,0 +1,37 @@
+@media screen and (max-width: 1024px) {
+  .header {
+    nav {
+      display: none;
+    }
+    .logo-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .menu-icon {
+      display: block;
+      background: #00897b;
+      border: none;
+      font-size: 25px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      text-align: center;
+    }
+  }
+  .portfolio img {
+    max-width: 100%;
+  }
+  .blog {
+    &__item {
+      margin-top: 10px;
+    }
+  }
+  .footer {
+    input,
+    textarea {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}

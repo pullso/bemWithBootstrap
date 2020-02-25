@@ -9,6 +9,10 @@
     line-height: 22px;
   }
   &-menu {
+    display: block;
+    li {
+      display: block;
+    }
     &__item {
       font-size: 20px;
       font-weight: 400;
@@ -23,5 +27,8 @@
         }
       }
     }
+  }
+  .menu-icon {
+    display: none;
   }
 }
