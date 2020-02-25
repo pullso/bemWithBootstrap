@@ -82,6 +82,8 @@
   transition: 0.3s;
   background-color: #00897b;
   border: 3px solid #00897b;
+  font-family: 'Roboto';
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -157,7 +159,7 @@
   margin: 0 auto;
   border: 2px solid #212121;
   background: transparent;
-  font-family: 'Open Sans - Semibold';
+  font-family: 'Roboto';
   font-size: 20px;
   line-height: 22px;
   text-transform: uppercase;
@@ -282,7 +284,7 @@
   background: transparent;
   color: #212121;
   border: 1px solid #212121;
-  font-family: 'Open Sans - Semibold';
+  font-family: 'Roboto';
   text-transform: uppercase;
   font-size: 20px;
   width: 180px;
@@ -468,7 +470,105 @@
   background: transparent;
   border-color: #00897b;
   color: black;
+}
+
+.footer {
+  padding-top: 165px;
+  padding-bottom: 125px;
+  max-height: 1300px;
+  color: #fff;
+  background: url(../img/footer.png) center center/cover no-repeat;
+  text-align: center;
+}
+
+.footer .fa-map-marker,
+.footer .fa-phone,
+.footer .fa-envelope {
+  font-size: 62px;
+  color: #fff;
+}
+
+.footer .circle {
+  width: 105px;
+  height: 105px;
+  background-color: #3949ab;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto 39px;
+}
+
+.footer .circle + p {
+  color: #ffffff;
   font-family: 'Open Sans - Semibold';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+
+.footer input,
+.footer textarea {
+  padding: 30px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.footer textarea {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  resize: none;
+}
+
+.footer input:focus,
+.footer textarea:focus {
+  outline: none;
+}
+
+.footer .form {
+  margin-top: 70px;
+}
+
+.footer button {
+  color: #212121;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  padding: 23px 77px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer button:hover {
+  opacity: 0.6;
+}
+
+.footer__rules {
+  height: 63px;
+  padding: 20px 0;
+  background-color: #fff;
+  color: #212121;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 110px;
 }
 
 ul,
